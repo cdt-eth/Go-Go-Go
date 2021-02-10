@@ -15,6 +15,9 @@ func main(){
 	count("fish")
 
 	// if we ran both functions as goroutines we'd enter a deadlock because both functions are queued and waiting for another line of code that won't run
+
+	// but we can add this line and force it to go anyways, however, it will run forever until theres a manual user input (i.e. i cancel the program)
+	fmt.Scanln()
 }
 
 func count(thing string){
