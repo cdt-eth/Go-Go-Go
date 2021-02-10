@@ -19,11 +19,18 @@ func main(){
 
 	fmt.Println(b)
 
-	// can use a slice not instantiate without a fixed size
+	// can use a slice to not instantiate without a fixed size
 	c := []int{1,2,3,4,5,6,7}
 	fmt.Println(c)
 	
 	// now append 8th element
 	c = append(c,8)
 	fmt.Println(c)
+
+	// copy a slice
+	d := make([]int,8)
+	copy(d, c)
+	fmt.Println(d)
+	d = append(d,100)
+	fmt.Println(d)
 }
