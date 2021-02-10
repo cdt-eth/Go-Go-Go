@@ -6,13 +6,24 @@ import (
 
 // create struct type
 type anime struct {
-	show string
-	episodes int
+	title string
+	epCount int
 }
 
+// func newAnime(name string) *anime {
+// 	a := anime{title: title}
+// 	a.epCount = 20
+// 	return &a
+// }
+
+
 func main() {
-	a := anime{show: "One Piece", episodes:931}
+	a := anime{title: "One Piece", epCount:931}
 	fmt.Println(a)
-	fmt.Println(a.show)
-	fmt.Println(a.episodes)
+	fmt.Println(a.title)
+	fmt.Println(a.epCount)
+
+	// fmt.Println(newAnime{title:"Attack On Titan", epCount:75})
+	// fmt.Println(newAnime{"Attack On Titan"})
 }
+
